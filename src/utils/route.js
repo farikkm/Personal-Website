@@ -17,7 +17,7 @@ class Route {
     let linkTag = document.querySelector("link[data-page-css]");
 
     if (linkTag) {
-      linkTag.href = `/src/styles/${this.filename}.css`;
+      linkTag.href = `/styles/${this.filename}.css`;
     } else {
       linkTag = document.createElement("link");
       linkTag.setAttribute("data-page-css", "");
