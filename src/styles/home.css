@@ -1,0 +1,46 @@
+.hero {
+  position: relative;
+}
+.hero__title {
+  font-size: var(--text-2xl);
+}
+.hero__button {
+  position: absolute;
+  left: 80%;
+  top: 60%;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background-color: #f9f9f9;
+
+  padding: 24px;
+  border-radius: 16px;
+
+  cursor: pointer;
+}
+
+.hero__button > span {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.hero__text {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__text > * {
+  font-family: var(--reserve-font);
+  font-size: var(--heading-5);
+}
+.hero__text_left {
+  display: flex;
+  flex-direction: column;
+}
+.hero__text_left > span:first-child {
+  font-weight: 700;
+}
+.hero__text_right {
+  max-width: 450px;
+}
