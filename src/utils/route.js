@@ -7,7 +7,7 @@ class Route {
   }
 
   async loadView() {
-    const res = await fetch(`/src/pages/${this.filename}.html`);
+    const res = await fetch(`/pages/${this.filename}.html`);
     const content = await res.text();
 
     app.innerHTML = content;
