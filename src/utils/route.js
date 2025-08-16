@@ -22,7 +22,7 @@ class Route {
       linkTag = document.createElement("link");
       linkTag.setAttribute("data-page-css", "");
       linkTag.rel = "stylesheet";
-      linkTag.href = `src/styles/${this.filename}.css`;
+      linkTag.href = `/styles/${this.filename}.css`;
 
       document.head.appendChild(linkTag);
     }
