@@ -2,11 +2,11 @@ import { Route } from "../utils/route.js";
 
 const routes = [
   new Route(/^\/$/, "home"),
-  new Route(/^\/about\/?$/, "aboout"),
+  new Route(/^\/about\/?$/, "about"),
   new Route(/^\/favorites\/?$/, "contact"),
 ];
 
-const page404 = new Route("/page-not-found", "404");
+const page404 = new Route(/^\/page-not-found\/?$/, "404");
 
 let currentModule;
 
@@ -25,8 +25,8 @@ const router = async () => {
         module.init?.();
         currentModule = module;
       })
-      .catch(() => {
-        console.warn("Error: Script file is not loaded");
+      .catch((error) => {
+        console.warn("Error: Script file is not loaded.", error);
       });
   }
 };

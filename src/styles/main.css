@@ -8,7 +8,7 @@
   --basic-font: "Labil Grotesk";
   --reserve-font: Arial, Helvetica, sans-serif;
   /* Fonts */
-  --text-2xl: 200px;
+  --text-2xl: 190px;
   --text-xl: 140px;
   --text-m: 84px;
   /* Headings */
@@ -54,7 +54,7 @@ ul {
 }
 
 .container {
-  max-width: 1350px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
 }
